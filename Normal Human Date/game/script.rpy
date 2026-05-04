@@ -4,6 +4,7 @@
 # name of the character.
 
 define j = Character("juno", color= '#03fcd3')
+define w = Character("waiter", color= '#fc030b')
 
 
 # The game starts here.
@@ -11,13 +12,31 @@ define j = Character("juno", color= '#03fcd3')
 label start:
     scene bg restaurant
     show table
+
+label narration_begining:
+    show table
     "You sit alone at a table for two, minutes upon minutes pass by. Your date should have been here by now…"
+    "When all of a sudden-"
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+label crash:
+    scene bg restaurant with vpunch:
+        zoom 1.0
 
-    scene bg room
+
+label juno_intro:
+    scene bg restaurant
+    show table
+    "You hear a loud noise from outside. Did someone ram their car into the building??"
+    "Then you see her. She looks… different."
+
+label juno_apperance:
+    show table
+    
+
+
+
+
+
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
