@@ -3,12 +3,15 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define j = Character("juno", color= '#03fcd3')
 
 
 # The game starts here.
 
 label start:
+    scene bg restaurant
+    show table
+    "You sit alone at a table for two, minutes upon minutes pass by. Your date should have been here by now…"
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
