@@ -32,6 +32,7 @@ label juno_intro:
 label juno_apperance:
     show table
     show juno neutral
+    j "..."
 
 
 
