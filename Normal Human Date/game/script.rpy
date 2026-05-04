@@ -30,9 +30,40 @@ label juno_intro:
     "Then you see her. She looks… different."
 
 label juno_apperance:
-    show table
+    
     show juno neutral
+    show table
     j "..."
+
+    menu:
+        "Hey! Juno, right?":
+            jump fake_name
+        "Hi! Did you find this place alright?":
+            jump location_found
+        "Did you hear that crash outside?":
+            jump parking_trouble
+
+
+label fake_name:
+    show juno panic
+    show table
+    j "\"Ju-\"?"
+    show juno happy
+    j "Oh yes! My human person name is Juno! Nice to meet you."
+
+label location_found:
+    show table
+    show juno happy
+
+label parking_trouble:
+    show table
+    show juno shock
+    j "NO"
+
+
+
+
+
 
 
 
