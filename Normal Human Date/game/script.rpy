@@ -11,7 +11,7 @@ define y = Character("you", color= '#ffe647')
 # The game starts here.
 
 label start:
-    play music "NHD soundtrack.mp3"
+    play music "NHD soundtrack.mp3" volume 0.75
     scene bg restaurant
     show table
 
