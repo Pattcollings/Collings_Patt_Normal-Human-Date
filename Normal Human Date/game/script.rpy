@@ -5,7 +5,7 @@
 
 define j = Character("juno", color= '#03fcd3')
 define w = Character("waiter", color= '#fc030b')
-define y = Character("you", color= '#ffe647')
+define y = Character("[you]", color= '#ffe647')
 
 # To do
 # juno panicked laughing expression (also actual art lol)
@@ -19,12 +19,12 @@ define y = Character("you", color= '#ffe647')
 # The game starts here.
 
 label start:
-    $ player_name = renpy.input("What name is your reservation under?")
+    $ you = renpy.input("What name is your reservation under?")
 
-    $ player_name = player_name.strip()
+    $ you = you.strip()
 
-    if player_name == "":
-        $ player_name = "Y/N"
+    if not you:
+        $ you = "Y/N"
     play music "NHD soundtrack.mp3" volume 0.75
     scene bg restaurant
     show table
@@ -65,7 +65,7 @@ label fake_name:
     show table
     j "\"Ju-\"?"
     show juno happy
-    j "Oh yes! My human person name is Juno! Nice to meet you, %(player_name)."
+    j "Oh yes! My human person name is Juno! Nice to meet you, %(you)s."
     jump flirt
 
 label location_found:
