@@ -192,6 +192,7 @@ label wtf:
 
     
 label gun_saftey:
+    show table
     show juno angry you
     j "I am showing my protectiveness and fierce loyalty."
 
@@ -203,6 +204,7 @@ label gun_saftey:
         
 
 label how_many:
+    show table
     show juno neutral talk
     j "How many people should I kill for you to feel protected?"
 
@@ -214,6 +216,7 @@ label how_many:
             jump good_ending
 
 label bad_ending:
+    show table
     show juno blast you
     j "See and that attitude is why you’re not ruling the world."
     show blast
@@ -221,6 +224,7 @@ label bad_ending:
     return
 
 label good_ending:
+    show table
     show juno happy
     j "Good thing I killed 5 people on the way here, then!"
 
@@ -232,6 +236,49 @@ label soulmate:
     j "Perfect. Would you like to copulate with me now?"
 
     show juno neutral
+    y "Sure! But before we do I have a question"
+
+    menu:
+        "Why do you have a gun?":
+            jump lore_drop
+        "Are you an alien?":
+            jump unsuspicious
+
+label lore_drop:
+    show table
+    show juno ramble
+    j "DEFINITELY not because of some intergalactic federation that I work for!"
+
+    show juno happy
+    j "No-sir-ee. It is because..."
+
+    show juno panic
+    j "..."
+
+    show juno happy
+    j "because it is a free country. Yee and haw!"
+
+label unsuspicious:
+    show table
+    show juno happy
+    j "HHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHA"
+    j "THAT'S A FUNNY JOKE, YOU"
+    j "YOU ARE SO FUNNY. NOw why on EARTH would an alien be here???"
+    show juno ramble
+    j "Would they be trying to infiltrate human society through romance in order to slowly but surely replace the planet’s population with a superior race of Junorians?"
+    show juno neutral
+    j "..."
+    y "..."
+    show juno neutral talk
+    j "Because that would be crazy, why would you suggest that???"
+    jump final_end
+
+
+label final_end:
+
+    y "fair enough, let's go!"
+scene black
+
 
 
 
