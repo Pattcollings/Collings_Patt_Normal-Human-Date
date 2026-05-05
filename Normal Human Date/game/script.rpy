@@ -138,9 +138,10 @@ label waiter_appear:
 
     menu:
         "I’ll have a ribeye steak with a glass of Cabernet Sauvignon.":
-        jump 
+            jump fancy
 
         "Yes, I shall have your finest chicken tendies and fries.":
+            jump cringe
 
 
 label fancy:
@@ -149,7 +150,45 @@ label fancy:
     show juno angry w
 
     w "Ooo, a fancy choice!"
+    show juno angry you
+    show waiter shock
+    j "Too fancy, I am intimidated"
+
+    show juno blast you
+    "She pulls out a laser gun and vaporizes you."
+
+    show blast
+    "ZAP"
+    return
+
+label cringe:
+    show table
+    show waiter cringe
+    show juno angry w
+    w "Bruh, that’s CRAZY work on a first date."
+
+    show juno blast open
+    show waiter shock
+    j "DO NOT INSULT THEM."
+
+    show juno blast close
+    show waiter blast
+    "You watch as she pulls out a laser gun and vaporizes the waiter"
+
+    show juno angry w
+    show waiter dust
+    "..."
+    jump wtf
+
+label wtf:
+    menu:
+        "WHAT THE HELL??"
+        
+        "Cool! Thanks!"
+
+
     
+
 
 
 
