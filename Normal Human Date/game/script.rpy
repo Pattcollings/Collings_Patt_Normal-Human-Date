@@ -7,10 +7,24 @@ define j = Character("juno", color= '#03fcd3')
 define w = Character("waiter", color= '#fc030b')
 define y = Character("you", color= '#ffe647')
 
+# To do
+# juno panicked laughing expression (also actual art lol)
+# black screen for when juno zaps the player
+# a method for having the player enter their own name?
+# extra sound effects
+# figure out how to have the table be in the front
+
+
 
 # The game starts here.
 
 label start:
+    $ player_name = renpy.input("What name is your reservation under?")
+
+    $ player_name = player_name.strip()
+
+    if player_name == "":
+        $ player_name = "Y/N"
     play music "NHD soundtrack.mp3" volume 0.75
     scene bg restaurant
     show table
@@ -51,7 +65,7 @@ label fake_name:
     show table
     j "\"Ju-\"?"
     show juno happy
-    j "Oh yes! My human person name is Juno! Nice to meet you."
+    j "Oh yes! My human person name is Juno! Nice to meet you, %(player_name)."
     jump flirt
 
 label location_found:
