@@ -11,6 +11,7 @@ define y = Character("you", color= '#ffe647')
 # The game starts here.
 
 label start:
+    play music "NHD soundtrack.mp3"
     scene bg restaurant
     show table
 
@@ -257,6 +258,7 @@ label lore_drop:
 
     show juno happy
     j "because it is a free country. Yee and haw!"
+    jump final_end
 
 label unsuspicious:
     show table
@@ -277,7 +279,7 @@ label unsuspicious:
 label final_end:
 
     y "fair enough, let's go!"
-scene black
+    scene black
 
 
 
