@@ -10,7 +10,7 @@ define y = Character("[you]", color= '#ffe647')
 # To do
 # juno panicked laughing expression (also actual art lol)
 # black screen for when juno zaps the player
-# a method for having the player enter their own name?
+
 # extra sound effects
 # figure out how to have the table be in the front
 
@@ -23,7 +23,7 @@ label start:
 
     $ you = you.strip()
 
-    if not you:
+    if you == "":
         $ you = "Y/N"
     play music "NHD soundtrack.mp3" volume 0.75
     scene bg restaurant
@@ -172,7 +172,7 @@ label fancy:
     show juno blast you
     "She pulls out a laser gun and vaporizes you."
 
-    show blast
+
     "ZAP"
     return
 
@@ -184,7 +184,7 @@ label cringe:
 
     show juno blast open
     show waiter shock
-    j "DO NOT INSULT THEM."
+    j "DO NOT INSULT %(you)s."
 
     show juno blast close
     show waiter blast
@@ -278,7 +278,7 @@ label unsuspicious:
     show table
     show juno happy
     j "HHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHA"
-    j "THAT'S A FUNNY JOKE, YOU"
+    j "THAT'S A FUNNY JOKE, %(you)s"
     j "YOU ARE SO FUNNY. NOw why on EARTH would an alien be here???"
     show juno ramble
     j "Would they be trying to infiltrate human society through romance in order to slowly but surely replace the planet’s population with a superior race of Junorians?"
