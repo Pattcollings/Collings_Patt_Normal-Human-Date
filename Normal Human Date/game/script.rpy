@@ -181,18 +181,57 @@ label cringe:
     jump wtf
 
 label wtf:
+    hide waiter dust
     menu:
-        "WHAT THE HELL??"
-        
-        "Cool! Thanks!"
+        "WHAT THE HELL??":
+            jump gun_saftey
+
+        "Cool! Thanks!":
+            jump soulmate
 
 
     
+label gun_saftey:
+    show juno angry you
+    j "I am showing my protectiveness and fierce loyalty."
 
+    menu:
+        "YOU JUST KILLED SOMEONE, I DO NOT FEEL PROTECTED.":
+            jump how_many
+        "Oh I see, I completely understand now.":
+            jump soulmate
+        
 
+label how_many:
+    show juno neutral talk
+    j "How many people should I kill for you to feel protected?"
 
+    menu:
+        "NONE!":
+            jump bad_ending
 
+        "5":
+            jump good_ending
 
+label bad_ending:
+    show juno blast you
+    j "See and that attitude is why you’re not ruling the world."
+    show blast
+    "She vaporizes you next"
+    return
+
+label good_ending:
+    show juno happy
+    j "Good thing I killed 5 people on the way here, then!"
+
+    y "That was genuinely my one and only hangup. I love you now."
+    jump soulmate
+
+label soulmate:
+    show juno neutral talk
+    j "Perfect. Would you like to copulate with me now?"
+
+    show juno neutral
 
 
 
