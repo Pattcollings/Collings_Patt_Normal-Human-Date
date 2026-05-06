@@ -69,8 +69,9 @@ label fake_name:
     jump flirt
 
 label location_found:
-    show table
+    
     show juno happy
+    show table
     j "Yes, I managed to pinpoint your exact location through the satellite system that keeps your planet under surveillance."
 
     show juno panic
