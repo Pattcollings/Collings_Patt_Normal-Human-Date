@@ -6,10 +6,11 @@
 define j = Character("juno", color= '#03fcd3')
 define w = Character("waiter", color= '#fc030b')
 define y = Character("[you]", color= '#ffe647')
+image black = "#000000"
 
 # To do
 # juno panicked laughing expression (also actual art lol)
-# black screen for when juno zaps the player
+
 
 # extra sound effects
 # figure out how to have the table be in the front
@@ -47,8 +48,7 @@ label juno_intro:
 
 label juno_apperance:
     
-    show juno neutral
-    show table
+    show juno neutral behind table
     j "..."
 
     menu:
@@ -172,7 +172,7 @@ label fancy:
     show juno blast you
     "She pulls out a laser gun and vaporizes you."
     
-    scene bg_black
+    scene black
     "ZAP"
     return
 
@@ -234,7 +234,7 @@ label bad_ending:
     show table
     show juno blast you
     j "See and that attitude is why you’re not ruling the world."
-    scene bg_black
+    scene black
     "She vaporizes you next"
     return
 
@@ -293,7 +293,7 @@ label unsuspicious:
 label final_end:
 
     y "fair enough, let's go!"
-    scene bg_black
+    scene black
 
 
 
