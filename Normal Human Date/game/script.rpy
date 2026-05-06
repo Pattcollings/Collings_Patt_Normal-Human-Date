@@ -12,8 +12,7 @@ image black = "#000000"
 # juno panicked laughing expression (also actual art lol)
 
 
-# extra sound effects
-# figure out how to have the table be in the front
+
 
 
 
@@ -189,6 +188,7 @@ label cringe:
     show waiter shock
     j "DO NOT INSULT %(you)s."
 
+    play sound "lazer zap.mp3" volume 0.5
     show juno blast close
     show waiter blast
     
@@ -238,7 +238,7 @@ label bad_ending:
     stop music
     show table
     show juno blast you
-    j "See and that attitude is why you’re not ruling the world."
+    play sound "lazer zap.mp3" volume 0.5
     scene black
     "She vaporizes you next"
     return
