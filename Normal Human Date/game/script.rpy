@@ -69,7 +69,7 @@ label fake_name:
     jump flirt
 
 label location_found:
-    
+
     show juno happy
     show table
     j "Yes, I managed to pinpoint your exact location through the satellite system that keeps your planet under surveillance."
@@ -146,10 +146,10 @@ label rose_scene:
 label waiter_appear:
     show table
     show juno neutral w
-    show waiter closed
+    show waiter closed behind table
     
     "A waiter comes by your table"
-    show waiter open
+    show waiter open 
     w "Are you two ready to order?"
 
     menu:
