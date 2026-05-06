@@ -166,15 +166,17 @@ label fancy:
     show juno angry w
 
     w "Ooo, a fancy choice!"
+    stop music
     show juno angry you
     show waiter shock
     j "Too fancy, I am intimidated"
 
     show juno blast you
-    "She pulls out a laser gun and vaporizes you."
+    "She pulls out a laser gun from her purse"
     
     scene black
-    "ZAP"
+    play sound "lazer zap.mp3" volume 0.5
+    "and vaporizes you."
     return
 
 label cringe:
@@ -189,6 +191,7 @@ label cringe:
 
     show juno blast close
     show waiter blast
+    
     "You watch as she pulls out a laser gun and vaporizes the waiter"
 
     show juno angry w
@@ -232,6 +235,7 @@ label how_many:
             jump good_ending
 
 label bad_ending:
+    stop music
     show table
     show juno blast you
     j "See and that attitude is why you’re not ruling the world."
