@@ -171,8 +171,8 @@ label fancy:
 
     show juno blast you
     "She pulls out a laser gun and vaporizes you."
-
-
+    
+    scene Bg_Black
     "ZAP"
     return
 
@@ -234,7 +234,7 @@ label bad_ending:
     show table
     show juno blast you
     j "See and that attitude is why you’re not ruling the world."
-    show blast
+    scene Bg_Black
     "She vaporizes you next"
     return
 
@@ -293,7 +293,7 @@ label unsuspicious:
 label final_end:
 
     y "fair enough, let's go!"
-    scene black
+    scene Bg_Black
 
 
 
