@@ -82,6 +82,7 @@ define gui.notify_text_size = 24
 
 ## The size of the game's title.
 define gui.title_text_size = 75
+define gui.show_name = False
 
 
 ## Main and Game Menus #########################################################
