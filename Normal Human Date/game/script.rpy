@@ -113,8 +113,8 @@ label read:
     j "Indeed I don’t."
 
     show juno angry talk
-    j "Well you said you were 6’4 on your profile so let’s call it a draw."
-
+    j "Well you said you were 6’4 on your profile so let us call it a draw."
+    show juno angry
     y "Damn...got my ass..."
     jump waiter_appear
 
@@ -299,6 +299,8 @@ label final_end:
 
     y "fair enough, let's go!"
     scene black
+    "You go to Juno’s suspiciously spaceship shaped car and have the best night of your life."
+    "Turns out Juno was actually an alien, who would have guessed?"
 
 
 
