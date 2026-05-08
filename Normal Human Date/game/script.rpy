@@ -231,6 +231,7 @@ label bad_ending:
     stop music
     show table
     show juno blast you
+    j "See, and that attitude is why you are not ruling the world."
     play sound "lazer zap.mp3" volume 0.5
     scene black
     "She vaporizes you next"
@@ -274,7 +275,7 @@ label lore_drop:
 
 label unsuspicious:
     show table
-    show juno happy
+    show juno sus
     j "HHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHHAHAHAHAHAHAHAHA"
     j "THAT'S A FUNNY JOKE, %(you)s"
     j "YOU ARE SO FUNNY. NOw why on EARTH would an alien be here???"
