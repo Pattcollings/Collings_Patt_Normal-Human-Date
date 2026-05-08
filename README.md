@@ -8,7 +8,8 @@ Demo Video:
 GitHub Repo:
 
 ## Description:
-Engine Used:
+
+Library Used:
 Ren'Py
 
 Extentions used: 

@@ -1,10 +1,6 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
+﻿
 define j = Character("juno", color= '#03fcd3')
-define w = Character("waiter", color= '#fc030b')
+define w = Character("waiter", color= '#ff484e')
 define y = Character("[you]", color= '#ffe647')
 image black = "#000000"
 
@@ -296,23 +292,9 @@ label final_end:
 
     y "fair enough, let's go!"
     scene black
+    stop music fadeout 1.0
     "You go to Juno’s suspiciously spaceship shaped car and have the best night of your life."
     "Turns out Juno was actually an alien, who would have guessed?"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
