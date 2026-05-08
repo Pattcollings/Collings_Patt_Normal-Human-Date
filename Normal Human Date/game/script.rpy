@@ -8,13 +8,13 @@ image black = "#000000"
 # The game starts here.
 
 label start:
+
     $ you = renpy.input("What name is your reservation under?")
 
     $ you = you.strip()
 
     if you == "":
         $ you = "Y/N"
-    play music "NHD soundtrack.mp3" volume 0.75
     scene bg restaurant
     show table
 
