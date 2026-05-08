@@ -33,10 +33,14 @@ label narration_begining:
     show table
     "You sit alone at a table for two, minutes upon minutes pass by. Your date should have been here by now…"
     "When all of a sudden-"
+    play sound "crash.mp3" volume 0.5
 
 label crash:
+
+
     scene bg restaurant with vpunch:
         zoom 1.0
+    
 
 
 label juno_intro:
