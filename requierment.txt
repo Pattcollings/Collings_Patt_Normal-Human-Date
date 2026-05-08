@@ -1,0 +1,7 @@
+Library/engine used for code:
+Library Used:
+Ren'Py
+
+Extentions used: 
+Ren'Py Language (Official)
+Ren'Py Launch and Sync
