@@ -8,13 +8,6 @@ define w = Character("waiter", color= '#fc030b')
 define y = Character("[you]", color= '#ffe647')
 image black = "#000000"
 
-# To do
-# juno panicked laughing expression (also actual art lol)
-
-
-
-
-
 
 # The game starts here.
 
