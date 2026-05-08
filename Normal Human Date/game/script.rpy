@@ -38,7 +38,7 @@ label narration_begining:
 label crash:
 
 
-    scene bg restaurant with vpunch:
+    scene res table with vpunch:
         zoom 1.0
     
 
