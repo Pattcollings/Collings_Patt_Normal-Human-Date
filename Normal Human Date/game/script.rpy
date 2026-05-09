@@ -1,6 +1,6 @@
 ﻿
-define j = Character("juno", color= '#03fcd3')
-define w = Character("waiter", color= '#ff484e')
+define j = Character("Juno", color= '#03fcd3')
+define w = Character("Waiter", color= '#ff484e')
 define y = Character("[you]", color= '#ffe647')
 image black = "#000000"
 
