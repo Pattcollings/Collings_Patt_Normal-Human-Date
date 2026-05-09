@@ -3,7 +3,8 @@
 
 ## Demo
 Demo Video:
-
+https://youtu.be/RMEgvw2SdCU 
+(Sorry it's so long, the game ended up longer than I anticipated lol)
 
 ## Github Repository
 GitHub Repo:
